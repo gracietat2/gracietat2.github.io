@@ -2,22 +2,44 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+// import butterFlyGif from 'butterfly.GIF';
+// import {v2 as cloudinary} from 'cloudinary';
+          
+// cloudinary.config({ 
+//   cloud_name: 'dcoznrnqy', 
+//   api_key: '676282115528383', 
+//   api_secret: 'bXjvfATVU8p4wFet3kqnhgSzuH0' 
+// });
 
 
 export default function Home() {
   return (
+
     
-    <div className={styles.container}>
+    
+    <div className={styles.title}>
       <Head>
         <title>Gracie Tat2</title>
 
       </Head>
 
 
-      <h1 className="header">Gracie Tat2</h1>
+      <h1 className='title'>Gracie Tat2</h1>
+      
 
       <main>
 
+   <div className={styles.butterfly}>  
+<Image
+    className='butterfly'
+    src="/images/butterfly.gif" // Route of the image file
+    height={144} // Desired size with correct aspect ratio
+    width={144} // Desired size with correct aspect ratio
+    alt="butterfly"
+  /> 
+ 
+  </div>  
+  <div className={styles.container}>
       <h1 className="title">
  <Link href="/routes/About">About</Link>
 </h1>
@@ -63,7 +85,7 @@ export default function Home() {
   /> */}
 
 
-    
+</div> 
       </main>
 
       <footer>
@@ -120,5 +142,7 @@ export default function Home() {
         }
       `}</style>
     </div>
+
+  
   )
 }

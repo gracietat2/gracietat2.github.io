@@ -2,6 +2,11 @@
   font-family: 'Petit Formal Script', cursive;
 } */
 
+.butterfly {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
 
 .container {
   min-height: 100vh;
