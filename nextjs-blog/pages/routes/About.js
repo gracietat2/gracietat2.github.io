@@ -10,7 +10,7 @@ export default function about() {
         </Head>
 
         <h1>Gracie</h1>
-        <p>Description</p>
+        <p>Hot tall cool chick</p>
         <h2>
           <Link href="/">← Back to home</Link>
         </h2>
